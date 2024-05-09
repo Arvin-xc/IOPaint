@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from "react"
 
-import useInputImage from "@/hooks/useInputImage"
+// import useInputImage from "@/hooks/useInputImage"
 import { keepGUIAlive } from "@/lib/utils"
 import { getServerConfig } from "@/lib/api"
 import Header from "@/components/Header"
@@ -25,19 +25,13 @@ function Home() {
     state.setFile,
   ])
 
-  const userInputImage = useInputImage()
+  // const userInputImage = useInputImage()
 
   const windowSize = useWindowSize()
 
   useEffect(() => {
-    if (userInputImage) {
-      setFile(userInputImage)
-    }
-  }, [userInputImage, setFile])
-
-  useEffect(() => {
     updateAppState({ windowSize })
-  }, [windowSize])
+  }, [windowSize, updateAppState])
 
   useEffect(() => {
     const fetchServerConfig = async () => {
