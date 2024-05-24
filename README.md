@@ -1,6 +1,5 @@
 <h1 align="center">IOPaint</h1>
 <p align="center">A free and open-source inpainting & outpainting tool powered by SOTA AI model.</p>
-
 <p align="center">
   <a href="https://github.com/Sanster/IOPaint">
     <img alt="total download" src="https://pepy.tech/badge/iopaint" />
